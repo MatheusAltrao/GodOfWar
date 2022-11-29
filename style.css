@@ -1,0 +1,861 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #000201;
+  --p-color: #BDC2CB;
+  --bg-button-color: #3265EA;
+}
+
+html {
+  font-size: 68.5%;
+  overflow-x: hidden;
+}
+
+body * {
+  font-family: 'Archivo', sans-serif;
+  color: #fff;
+
+}
+
+body {
+  background-color: var(--bg-color);
+
+}
+
+/* resets */
+
+button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 120rem;
+  font-weight: 700;
+  font-size: 12.4rem;
+  line-height: 97%;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 130%;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 160%;
+  color: var(--p-color);
+}
+
+.container {
+  max-width: 130rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 3rem;
+
+  @media(max-width:1440rem) {
+    max-width: 124.8rem;
+  }
+}
+
+.bullet {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.subtitle span {
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.sony {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.logo {
+  width: 19.3rem;
+  height: 5rem;
+}
+
+
+/* card */
+
+.card-character {
+  width: 100%;
+  max-width: 38.4rem;
+  height: 48rem;
+}
+
+
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+
+  height: 8rem;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container .platform,
+header .container .platform ul {
+  display: flex;
+  align-items: center;
+}
+
+
+header .container .platform span {
+  font-weight: 600;
+  font-size: 1.4rem;
+
+}
+
+header .container .platform ul {
+  margin-left: 1.8rem;
+  gap: 0.8rem;
+}
+
+header .container .platform ul li {
+  border: 1px solid #fff;
+  padding: 0.4rem;
+}
+
+
+/* home */
+
+.s-hero {
+  padding-top: 16.4rem;
+  padding-bottom: 10.3rem;
+  background-image: url(assets/bg-hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.s-hero .container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.s-hero .container .left {
+  width: 100%;
+  max-width: 78.2rem;
+}
+
+.s-hero .container .left h1 {
+  margin-top: 2.4rem;
+  margin-bottom: 1.8rem;
+
+}
+
+.s-hero .container .left p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 140%;
+  margin-bottom: 4rem;
+}
+
+.s-hero .container .left .value {
+  display: flex;
+  font-size: 2.2rem;
+
+}
+
+.s-hero .container .left .value strong {
+  background-color: #fff;
+  padding: 1.8rem 3.6rem;
+  color: #000;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.s-hero .container .left .value a {
+  display: block;
+
+  font-weight: 700;
+
+  padding: 1.8rem 3.6rem;
+
+  background-color: var(--bg-button-color);
+
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.s-hero .container .right {
+  width: 100%;
+  max-width: 44.3rem;
+}
+
+.s-hero .container .right span {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
+
+  display: block;
+
+  margin-bottom: 1.3rem;
+}
+
+.s-hero .container .right button {
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--bg-button-color);
+
+  position: relative;
+
+  box-shadow: 0 5px 15px 0px var(--bg-button-color);
+
+  margin-bottom: 2rem;
+
+  border-radius: 0.4rem;
+}
+
+.thmbnail {
+  height: 100%;
+}
+
+
+.s-hero .container .right button img {
+  border-radius: 0.2rem;
+}
+
+.play {
+  width: 3rem;
+  height: 3rem;
+
+  position: absolute;
+  bottom: 2.5rem;
+  left: 3.2rem;
+}
+
+.thmbnail {
+  width: 100%;
+}
+
+
+.year-old img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.year-old {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.year-old p {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+
+  max-width: 27.4rem;
+  color: #fff;
+}
+
+/* info-geral */
+.s-info-geral {
+  width: 100%;
+  height: 20vh;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #090A0A;
+}
+
+.s-info-geral ul {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.s-info-geral .container ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+.s-info-geral .container ul li span {
+  display: flex;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 160%;
+  color: var(--p-color);
+}
+
+.s-info-geral .container ul li img {
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+}
+
+/* story */
+
+.s-story {
+  width: 100%;
+  height: 89.9rem;
+
+  padding-top: 16rem;
+  padding-bottom: 8rem;
+
+  background-image: url(assets/bg-story-story.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+}
+
+.s-story .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s-story .left {
+  width: 100%;
+  max-width: 62.9rem;
+
+}
+
+.s-story .left h2 {
+  margin-top: 2.8rem;
+  margin-bottom: 2.4rem;
+  max-width: 50.2rem;
+}
+
+.s-story .left p {
+  margin-bottom: 5.6rem;
+}
+
+.s-story .left .corp {
+  display: flex;
+  align-items: center;
+}
+
+
+.s-story .left .corp img {
+  width: 80%;
+  height: 80%;
+  margin-bottom: 2rem;
+
+  object-fit: cover;
+}
+
+.s-story .left .corp p {
+  margin-bottom: 0;
+  margin-left: 4.6rem;
+  font-size: 1.6rem;
+
+  max-width: 32.4rem;
+}
+
+
+.kratos-atreus {
+  width: 100%;
+  position: relative;
+  left: 1rem;
+}
+
+.s-character {
+  padding-top: 17.6rem;
+  padding-bottom: 14.3rem;
+  background-image: url(assets/bg-characters.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.s-character .description {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 5rem;
+}
+
+.s-character .description .left {
+  width: 100%;
+  max-width: 61.2rem;
+}
+
+.s-character .description .left h2 {
+  margin-top: 2.8rem;
+  margin-bottom: 2.4rem;
+}
+
+.s-character .right {
+  display: flex;
+  align-items: center;
+}
+
+.s-character .right span {
+  display: block;
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  max-width: 14.3rem;
+
+}
+
+
+/* swiper */
+
+.swiper {
+  width: 100%;
+  height: 70vh;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.slide-character {
+  max-width: 1300px;
+
+}
+
+.item {
+  padding: 1rem;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: #fff;
+}
+
+
+.item img {
+  border-radius: 0.4rem;
+  position: relative;
+}
+
+.item:hover button {
+  opacity: 1;
+  bottom: 10rem;
+}
+
+.item:hover img {
+  box-shadow: 0 5px 15px 5px rgba(38, 23, 182, 0.2);
+}
+
+.item button {
+
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 1.8rem 3.6rem;
+  background-color: var(--bg-button-color);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.0rem;
+
+  border-radius: 4px;
+  opacity: 0;
+
+  transition: all 0.3s ease;
+}
+
+.item h3 {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 7px;
+}
+
+
+/* animation */
+
+.sony {
+  animation: fromLeft 0.3s ease backwards;
+}
+
+.logo {
+  animation: fromLeft 0.3s ease backwards;
+  animation-delay: 0.1s;
+}
+
+header .platform span {
+  animation: fromTop 0.3s ease backwards;
+}
+
+header .platform ul li:nth-child(1) {
+  animation: fromTop 0.3s ease backwards;
+  animation-delay: 0.2s;
+}
+
+header .platform ul li:nth-child(2) {
+  animation: fromTop 0.3s ease backwards;
+  animation-delay: 0.3s;
+}
+
+
+.s-hero .subtitle {
+  animation: fromLeft 0.3s ease backwards;
+  animation-delay: 0.1s;
+}
+
+.s-hero .left h1 {
+  animation: fromLeft 0.5s ease backwards;
+  animation-delay: 0.4s;
+}
+
+.s-hero .left .text {
+  animation: fromLeft 0.5s ease backwards;
+  animation-delay: 0.6s;
+}
+
+.s-hero .left .value strong {
+  animation: fromBottom 0.3s ease backwards;
+  animation-delay: 0.6s;
+}
+
+.s-hero .left .value a {
+  animation: fromBottom 0.3s ease backwards;
+  animation-delay: 0.8s;
+}
+
+.s-hero .right {
+  animation: fromBottom 0.3s ease backwards;
+  animation-delay: 0.3s;
+}
+
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+
+@media(max-width:1200px) {
+  .s-hero {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    height: auto;
+    background-position-x: 20%;
+  }
+
+  .s-hero .left {
+    max-width: 64rem;
+  }
+
+  .s-hero .left h1 {
+    font-size: 8rem;
+  }
+
+  .s-hero .container .left p {
+    font-size: 1.4rem;
+  }
+
+  .s-hero .container .right {
+    top: 0;
+    max-width: 35.3rem;
+    background-position-x: 30%;
+  }
+
+
+  .s-hero .container .right button {
+    height: 19.7rem;
+  }
+
+  .s-character .right,
+  .s-character .right .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+
+  .kratos-atreus {
+    display: none;
+  }
+}
+
+@media(max-width:1000px) {
+
+  .s-hero {
+    padding: 5rem 0;
+    background-image: url(assets/bg-hero.jpg);
+    background-position: center bottom;
+  }
+
+  .s-hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+  }
+
+  .s-hero .container .left {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .s-hero .container .right {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+
+  .s-info-geral .container ul {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+    gap: 2rem 0;
+    width: 100%;
+
+  }
+
+  .s-info-geral {
+    height: 100%;
+    padding: 1rem 0;
+  }
+
+
+  .s-info-geral .container ul li span {
+    font-size: 1.2rem;
+  }
+
+
+  .s-story .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .s-story .container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+
+  }
+
+
+  .kratos-atreus {
+    position: static;
+    height: 100%;
+    width: 100%;
+
+  }
+
+
+  .s-story .left .corp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .s-story .left .corp img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .s-story .left .corp p {
+    display: none;
+
+  }
+
+  .s-character {
+    padding-top: 5rem;
+  }
+
+  .s-character .description .left,
+  .s-character .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+
+}
+
+@media(max-width:560px) {
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  header {
+    height: 7rem;
+  }
+
+
+
+  header .platform span,
+  .sony {
+    display: none;
+  }
+
+
+  .s-hero .left h1 {
+    font-size: 5rem;
+  }
+
+  .logo {
+    max-width: 200px;
+  }
+
+
+  .s-info-geral .container ul {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr;
+
+
+    gap: 2rem 0;
+    width: 100%;
+
+  }
+
+
+  .s-hero .container .left .value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .kratos-atreus {
+    display: none;
+  }
+
+  .value-button {
+    width: 200px;
+    font-size: 1.8rem;
+    border-radius: 0.4rem;
+    width: 100%;
+  }
+
+
+  p {
+    font-size: 1.6rem;
+  }
+
+
+
+}
